@@ -1,0 +1,64 @@
+﻿@using SoftOnSale_V2.Models;
+@*@using SoftOnSale_V2.Data.Models;
+@model HomeViewModel
+
+<h1>Бестселлеры</h1>
+@{
+foreach (ItemForSale item in Model.favItems)
+    {
+        @Html.Partial("AllItems", item)
+    }
+}
+*@
+
+<content>
+
+	<div class="stripes-layer">
+		<div class="stripes stripe-1">
+		</div>
+
+		<div class="stripes stripe-2">
+		</div>
+
+		<div class="stripes center">
+		</div>
+
+		<div class="stripes stripe-3">
+		</div>
+
+		<div class="stripes stripe-4">
+		</div>
+	</div>
+
+	<div class="headline">
+		<h1>Лицензионные ключи</h1>
+	</div>
+
+	<div class="stock upper">
+	<partial Name="Partial/_Part"> </partial>
+	</div>
+	<div class="stock lower">
+
+		<div class="item 6">
+		</div>
+
+		<div class="item 7">
+		</div>
+
+		<div class="item 8">
+		</div>
+
+		<div class="item 9">
+		</div>
+
+		<div class="item 10">
+		</div>
+	</div>
+
+
+
+	<div class="horizontal-scroll-wrapper">
+		<div class="scroller-anch"></div>
+	</div>
+
+</content>

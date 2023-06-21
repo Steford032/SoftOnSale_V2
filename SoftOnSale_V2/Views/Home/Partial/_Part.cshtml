@@ -1,0 +1,16 @@
+﻿@model IEnumerable<SoftOnSale_V2.Models.ItemForSale>
+
+@{
+    foreach (var item in Model)
+    {
+
+            <div class="item">
+                <h1>@item.name</h1>
+                <p>Price: @item.price.ToString()</p>
+                <p>Short description: @item.shortDescription</p>
+
+                <img src="@item.img" alt="" width="240" height="250">
+            </div>
+
+    }
+}
